@@ -2,34 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Olenveil</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: #0f0f0f;
-      color: #f5f5f5;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #ccc;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Olenveil – Foreknown</title>
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Unica+One&display=swap" rel="stylesheet">
+  <script src="js/main.js" defer></script>
+  <script src="js/canvas.js" defer></script>
 </head>
 <body>
-  <h1>Olenveil</h1>
-  <p>Progressive Rock / Melodic Metal</p>
-  <p>Debut album <strong>Foreknown</strong> streaming now.</p>
+  <canvas id="ripple-canvas"></canvas>
+  <main class="container">
+    <h1>Olenveil</h1>
+    <p class="tagline">One guy, some words, and a lot of trial and error.</p>
+    <h2 class="album">Debut Album <em>Foreknown</em></h2>
+    <div class="album-ripple-wrapper">
+      <div class="album-art">
+        <img src="assets/images/foreknown-cover.png" alt="Foreknown album cover" />
+      </div>
+    </div>
+    <div id="countdown" class="countdown">
+      <div><span class="num" id="days">00</span><span class="label">days</span></div>
+      <div><span class="num" id="hours">00</span><span class="label">hours</span></div>
+      <div><span class="num" id="minutes">00</span><span class="label">minutes</span></div>
+      <div><span class="num" id="seconds">00</span><span class="label">seconds</span></div>
+    </div>
+    <hr>
+    <div class="stream-links">
+      <div id="stream-placeholder" class="stream-coming">
+        Streaming links will appear here on release day.
+      </div>
+
+      <div id="stream-buttons" style="display: none;">
+        <a href="https://open.spotify.com/album/YOUR_ID" class="stream-btn" target="_blank" rel="noopener">Spotify</a>
+        <a href="https://music.apple.com/album/YOUR_ID" class="stream-btn" target="_blank" rel="noopener">Apple Music</a>
+        <a href="https://youtube.com/playlist?list=YOUR_ID" class="stream-btn" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+
+
+    <div class="social-links">
+      <a href="https://instagram.com/olenveil" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="https://tiktok.com/@olenveil" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i> TikTok</a>
+      <a href="https://x.com/olenveil" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i> X (Twitter)</a>
+      <a href="https://youtube.com/@Olenveil" target="_blank" rel="noopener"><i class="fab fa-youtube"></i> YouTube</a>
+      <a href="https://facebook.com/olenveil" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a>
+    </div>
+  </main>
 </body>
 </html>
